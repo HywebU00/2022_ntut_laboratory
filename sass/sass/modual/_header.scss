@@ -1,6 +1,6 @@
 //header
 .header {
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -13,26 +13,26 @@
     @include screen('mobile') {
         position: fixed;
         width: 100%;
-        height: 60px;
+        height: 110px;
     }
-    &:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: url('../images/header_bg2.png')no-repeat right top;
-        background-size: auto 110px;
-        // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        pointer-events: none;
-        z-index: -1;
-        @include screen('mobile') {
-            height: 60px;
-            background: #021677 url('../images/header_bg2.png')no-repeat right top;
-            background-size: auto 60px;
-        }
-    }
+    // &:before {
+    //     position: absolute;
+    //     content: '';
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     background: url('../images/header_bg2.png')no-repeat right top;
+    //     background-size: auto 110px;
+    //     // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    //     pointer-events: none;
+    //     z-index: -1;
+    //     @include screen('mobile') {
+    //         height: 60px;
+    //         background: #021677 url('../images/header_bg2.png')no-repeat right top;
+    //         background-size: auto 60px;
+    //     }
+    // }
 
 
     // mobile btn for extend
@@ -40,6 +40,7 @@
         width: 60px !important;
         height: 60px !important;
         position: absolute;
+        z-index: 999999;
         top: 0px;
         display: block;
         font-size: 0em;
@@ -62,22 +63,24 @@
         .sidebarCtrl {
             display: none;
             left: 0px;
+
             @extend %mobileCtrlBtn;
             span {
                 position: absolute;
                 background: #eee;
                 width: 50%;
                 height: 3px;
-                top: 20px;
+                top: 26px;
                 left: 50%;
                 margin-left: -25%;
                 display: block;
                 border-radius: 2px;
+                z-index: 9999999;
                 &:nth-child(2) {
-                    top: 28px;
+                    top: 34px;
                 }
                 &:nth-child(3) {
-                    top: 36px;
+                    top: 42px;
                 }
             }
         }
@@ -104,16 +107,26 @@
         }
     }
     h1 {
-        float: left;
+        // float: left;
         width: 680px;
         height: 75px;
         margin: 0;
-        padding: 25px 0 0 50px;
+        padding: 0;
         box-sizing: border-box;
+        position: absolute;
+        top:20px;
+        left:50px;
+        z-index: 9999;
 
         a {
             display: inline-block;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+            color:#fff;
+            line-height: 1.45em;
+            font-weight: 500;
+            font-size: .813em;
+            letter-spacing: 1px;
+
 
         }
         img {
@@ -121,14 +134,55 @@
             max-width: 680px;
             max-height: 75px;
         }
+        .eng{
+            display: inline-block;
+            color:#fff;
+            line-height: 1.35em;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: .813em;
+            margin-left: .3em;
+        }
+        .sub{
+            display: block;
+            color:#fff;
+            line-height: 1.35em;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: .7em;
+        }
+
         @include screen('tablet') {
-         padding: 25px 0 0 30px; 
-     }
-     @include screen('mobile') {
-        padding: 2px 60px ;
+
+        }
+        @include screen('mobile') {
+        // padding: 2px 60px ;
+        left:60px;
         width: 100%;
         text-align: left;
-        height: 60px;
+        // height: 60px;
+        a {
+            font-size: .75em;
+            letter-spacing: 1px;
+            line-height: 1.25em;
+
+        }
+        .eng{
+            display: block;
+            line-height: 1.45em;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: .7em;
+            margin-left: 0;
+        }
+        .sub{
+            display: block;
+            color:#fff;
+            line-height: 1.35em;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: .4em;
+        }
         img {
             width: auto;
             height: auto;
@@ -370,13 +424,13 @@
           }
       }
       >.container {
-       .sidebarCtrl {
-        span{
-            background: #19367B;
-        }
-    } 
+         .sidebarCtrl {
+            span{
+                background: #19367B;
+            }
+        } 
 
-}
+    }
 
 
 }

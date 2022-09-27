@@ -13,8 +13,8 @@ $(function() {
     // 首頁輪播
     $('.mpSlider').slick({
         mobileFirst: true,
-        dots: true,
-        arrows: true,
+        dots: false,
+        arrows: false,
         infinite: true,
         speed: 500,
         autoplay: true,

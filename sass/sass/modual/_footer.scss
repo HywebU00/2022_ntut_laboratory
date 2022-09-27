@@ -4,11 +4,25 @@ footer {
     text-align: center;
     font-size: 0.813em;
     padding: .5em 0;
-    background: $primaryColor;
+    // background: $primaryColor;
+    background: rgb(25,54,123);
+    background: -moz-linear-gradient(90deg, rgba(25,54,123,1) 0%, rgba(25,54,123,1) 35%, rgba(6,150,131,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(25,54,123,1) 0%, rgba(25,54,123,1) 35%, rgba(6,150,131,1) 100%);
+    background: linear-gradient(90deg, rgba(25,54,123,1) 0%, rgba(25,54,123,1) 35%, rgba(6,150,131,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19367b",endColorstr="#069683",GradientType=1);
+
     color:#fff;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
 
     @include screen('mobile') {
+        position: relative;
+        bottom: 0;
+        left: 0;
         p{
             line-height: 1.5em;
             font-size: 0.75em;
@@ -43,10 +57,10 @@ footer {
     .footer_icon {
         flex:0 1 200px;
         @include screen('tablet') {
-         flex:1 1 100%; 
-         text-align: right;
-     }
- }
+           flex:1 1 100%; 
+           text-align: right;
+       }
+   }
     // 版權連結
     .footer_link {
         @include li-reset();
@@ -59,9 +73,9 @@ footer {
             flex:0 1 auto;
             margin: 0px 5px 5px 0px;
             @include screen('mobile') {
-               flex:1 1 100%; 
-           }
-           a {
+             flex:1 1 100%; 
+         }
+         a {
             display: block;
             padding: .5em 1em;
             background: $primaryColor;

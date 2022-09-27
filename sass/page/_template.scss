@@ -48,6 +48,7 @@ body {
         background-size: auto 100vh;
     }
 }
+
 .main {
     // position: relative;
     // margin: 0 auto;
@@ -113,6 +114,7 @@ body {
         flex-basis: 220px;
         max-width: 220px;
         margin-right: 40px;
+        min-height: 100vh;
         background: rgb(225,239,248);
         background: -moz-linear-gradient(0deg, rgba(225,239,248,1) 0%, rgba(232,243,249,1) 35%, rgba(243,247,250,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(225,239,248,1) 0%, rgba(232,243,249,1) 35%, rgba(243,247,250,1) 100%);
@@ -130,15 +132,24 @@ body {
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
             min-height: 90vh;
-            padding: 1.5em 0;
+            padding: 130px 0 6em;
         }
         @include screen('tablet') {
+            display: block;
+            +.center_block {
+                flex: none;
+                flex-basis: calc(100% - 300px);
+                max-width: calc(100% - 300px);
+                padding: 130px 0 6em;
+            }
+        }
+        @include screen('mobile') {
             display: none;
             +.center_block {
                 flex: none;
                 flex-basis: 100%;
                 max-width: 100%;
-                padding: 80px 5% 20px;
+                padding: 130px 5% 6em;
             }
         }
     }

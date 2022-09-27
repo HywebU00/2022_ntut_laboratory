@@ -233,19 +233,19 @@
             /* 點的顏色 */
             background: #666;
             opacity: .4;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             &:hover,
             &:focus {
                 opacity: 1;
                 /* 點hover的顏色 */
-                background: #21baff;
+                background: $secondaryColor;
             }
             &:focus {
                 opacity: 1;
                 /* 點focus的顏色 */
-                background: #ff3e4d;
+                background: $secondaryColor;
                 // box-shadow: 0px 0px 0px 1px #ff3e4d; /* 讓focus過去的點大一些 */
             }
         }
@@ -256,11 +256,11 @@
                 background: $aHover;
                 &:hover {
                     /* 點 active  hover的顏色 */
-                    background: #ff3e4d;
+                    background: $secondaryColor;
                 }
                 &:focus {
                     /* 點 active  focus的顏色 */
-                    background: #ff3e4d;
+                    background: $secondaryColor;
                 }
             }
         }
@@ -270,15 +270,24 @@
 // ---------slick._scss
 // 首頁大圖輪播 
 .mpSlider {
-    width: 100%;
-    padding-bottom: 3em;
+    width: 509px;
+    height: 110px;
+    padding-bottom: 0;
+    float: right;
+    margin: 0;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 999;
+
     @include gutter(0);
     .img-container {
-        @include aspect-ratio(5,
+        background: rgba(0, 0, 0, 0);
+        @include aspect-ratio(9.7,
         2); //PC版比例
         @include screen('mobile') {
-            @include aspect-ratio(5,
-            3); //Mobile版比例
+            // @include aspect-ratio(5,
+            // 3); //Mobile版比例
         }
     }
     .slick-prev {

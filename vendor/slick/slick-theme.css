@@ -15,7 +15,7 @@
 /* Arrows */
 .slick-prev,
 .slick-next {
-  position: absolute;
+/*   position: absolute;
   display: block;
   height: 20px;
   width: 20px;
@@ -28,7 +28,7 @@
   transform: translate(0, -50%);
   padding: 0;
   border: none;
-  outline: none;
+  outline: none; */
 }
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
@@ -48,13 +48,13 @@
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+/*   font-family: "slick";
   font-size: 20px;
   line-height: 1;
   color: white;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 .slick-prev {
@@ -129,12 +129,12 @@
   opacity: 1;
 }
 .slick-dots li button:before {
-  position: absolute;
+/*   position: absolute;
   top: 0;
   left: 0;
   content: "•";
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
@@ -142,7 +142,7 @@
   color: black;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 .slick-dots li.slick-active button:before {
   color: black;
