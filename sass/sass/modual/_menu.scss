@@ -14,8 +14,12 @@
     position: fixed;
     z-index: 99;
     clear: both;
-    top:105px;
+    top:110px;
     width: 220px;
+    max-height: 72vh;
+    // overflow: auto;
+    overflow-y: scroll;
+    // border:solid 1px #c00;
     &.sticky {
         position: fixed;
         top: 0;
@@ -45,11 +49,14 @@
     }
     // 預設選單 ul
     >ul {
-        margin: 1em 1em 3em 0 ;
+        margin: 1em .5em 3em 0;
         padding: 0;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
+
+
+
         // 第一層選單樣式
         >li {
             flex: 0 1 16%;
@@ -73,17 +80,17 @@
             &.hasChild {
                 >a {
                     &:after {
-                        content: '';
-                        width: 4px;
-                        height: 4px;
-                        display: inline-block;
-                        margin-left: 0.5em;
-                        vertical-align: middle;
-                        border: 2px solid lighten($color-word, 40);
-                        transform: rotate(135deg);
-                        border-bottom: none;
-                        border-left: none;
-                        margin-bottom: 0.2em;
+                        // content: '';
+                        // width: 4px;
+                        // height: 4px;
+                        // display: inline-block;
+                        // margin-left: 0.5em;
+                        // vertical-align: middle;
+                        // border: 2px solid lighten($color-word, 40);
+                        // transform: rotate(135deg);
+                        // border-bottom: none;
+                        // border-left: none;
+                        // margin-bottom: 0.2em;
                     }
                 }
             }
@@ -127,25 +134,39 @@ ul {
             background: #a7b9e2;
             padding: 0;
             z-index: 999999;
-            position: absolute;
+            // position: absolute;
+            position: relative;
             top: auto;
             left: 0;
             list-style: none;
             text-align: left;
             animation: showMenu 0.3s $cubic;
             font-size: 1em;
-            border-radius: 5px;
-            margin-left: 12px;
+            // border-radius: 5px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin: 10px 1em 1em 0;
+            // margin-left: 12px;
             &:before{
                 content:'';
+                // width: 0;
+                // height: 0;
+                // border-style: solid;
+                // border-width: 10px 12px 10px 0;
+                // border-color: transparent #a7b9e2 transparent transparent;
+                // width: 0;
+                // height: 0;
+                // border-style: solid;
+                // border-width: 8px 7px 0 7px;
+                // border-color: #19367b transparent transparent transparent;
+                position: absolute;
+                top:-8px;
+                left:2em;
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: 10px 12px 10px 0;
-                border-color: transparent #a7b9e2 transparent transparent;
-                position: absolute;
-                top:16px;
-                left:-12px;
+                border-width: 0 7px 8px 7px;
+                border-color: transparent transparent #a7b8e2 transparent;
 
 
             }
@@ -219,7 +240,7 @@ ul {
                 &.hasChild {
                     >a {
                         &:after {
-                            transform: rotate(45deg);
+                            transform: rotate(135deg);
                         }
                     }
                 }
@@ -229,7 +250,7 @@ ul {
             li{
                 ul{
                     top: 0;
-                    left: 100%;
+                    left: 0;
                     animation: none;
                 }
             }
