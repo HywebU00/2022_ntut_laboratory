@@ -18,7 +18,7 @@
     width: 220px;
     max-height: 72vh;
     // overflow: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
     // border:solid 1px #c00;
     &.sticky {
         position: fixed;
@@ -108,10 +108,10 @@
         }
         .active{
             a{
-               background: $primaryColor;
-               color: #fff; 
-           }
-           ul{
+             background: $primaryColor;
+             color: #fff; 
+         }
+         ul{
             a{
                 background: #a7b9e2;
                 color: #19367B;
@@ -176,11 +176,11 @@ ul {
                     }
                     &:last-child{
                         a{
-                           border:none;   
-                       }
-                   }
-               }
-               li.hasChild {
+                         border:none;   
+                     }
+                 }
+             }
+             li.hasChild {
                 >ul {
                     z-index: 999;
                 }
