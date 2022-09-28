@@ -69,8 +69,12 @@ a.more {
     font-size: .813em;
     text-align: center;
     position: fixed;
+    z-index: 9;
     left:2em;
-    bottom:5.5em;
+    bottom:1.5em;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0 1em;
     em{
         font-style: normal;
     }
@@ -145,7 +149,7 @@ a.more {
     .copyright{
         position: absolute;
         left:260px;
-        bottom:1.3em;
+        bottom:1em;
         line-height: 1.4em;
         font-size: .813em;
         p{margin: 0;}
