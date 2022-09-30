@@ -65,23 +65,17 @@ a.more {
         }
     }
 }
-.counter{
-    font-size: .813em;
-    text-align: center;
-    position: fixed;
-    z-index: 9;
-    left:2em;
-    bottom:5.5em;
-    // background: #fff;
-    // border-radius: 15px;
-    // padding: 0 1em;
-    em{
-        font-style: normal;
-    }
-}
+
 .mp{
     .counter{
+        position: fixed;
+        font-size: 0.813em;
         bottom:1.3em;
+        left:2.5em;
+        em {
+            font-style: normal;
+            padding: 0 .5em;
+        }
     }   
 }
 

@@ -115,11 +115,7 @@ body {
         max-width: 220px;
         margin-right: 40px;
         min-height: 100vh;
-        background: rgb(225,239,248);
-        background: -moz-linear-gradient(0deg, rgba(225,239,248,1) 0%, rgba(232,243,249,1) 35%, rgba(243,247,250,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(225,239,248,1) 0%, rgba(232,243,249,1) 35%, rgba(243,247,250,1) 100%);
-        background: linear-gradient(0deg, rgba(225,239,248,1) 0%, rgba(232,243,249,1) 35%, rgba(243,247,250,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1eff8",endColorstr="#f3f7fa",GradientType=1);
+        background: #f5f5f5;
         &.hidden {
             +.center_block {
                 flex: none;

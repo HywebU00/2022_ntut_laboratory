@@ -29,7 +29,7 @@
 .menu {
     box-sizing: border-box;
     position: fixed;
-    z-index: 99;
+    z-index: 9;
     clear: both;
     top:110px;
     width: 220px;
@@ -71,8 +71,8 @@
 }
     // 預設選單 ul
     >ul {
-        margin: 1em .5em 3em 0;
-        padding: 0;
+        margin: 1em .5em 1em 0;
+        padding: 0 0 5em 0;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
@@ -93,7 +93,7 @@
                 border-top-right-radius: 12px;
                 border-bottom-right-radius: 12px;
                 &:hover, &:focus{
-                    background: $primaryColor;
+                    background: $menubg;
                     color: #fff;
                 }
             }
@@ -102,18 +102,25 @@
             &.hasChild {
                 >a {
                     &:after {
-                        // content: '';
-                        // width: 4px;
-                        // height: 4px;
-                        // display: inline-block;
-                        // margin-left: 0.5em;
-                        // vertical-align: middle;
-                        // border: 2px solid lighten($color-word, 40);
-                        // transform: rotate(135deg);
-                        // border-bottom: none;
-                        // border-left: none;
-                        // margin-bottom: 0.2em;
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        display: inline-block;
+                        margin-left: 0.5em;
+                        vertical-align: middle;
+                        border: 2px solid lighten($color-word, 50);
+                        transform: rotate(135deg);
+                        border-bottom: none;
+                        border-left: none;
+                        margin-bottom: 0.2em;
+                        position: absolute;
+                        top:1.18em;
+                        right:1em;
+                        &:hover, &:focus{
+                            border: 2px solid lighten($color-word, 90);
+                        }
                     }
+
                 }
             }
             &:hover{
@@ -130,10 +137,10 @@
         }
         .active{
             a{
-             background: $primaryColor;
-             color: #fff; 
-         }
-         ul{
+               background: $primaryColor;
+               color: #fff; 
+           }
+           ul{
             a{
                 background: #a7b9e2;
                 color: #19367B;
@@ -153,7 +160,7 @@ ul {
             display: none;
             overflow: visible;
             width: 99%;
-            background: #a7b9e2;
+            background: $menubg2;
             padding: 0;
             z-index: 999999;
             // position: absolute;
@@ -178,7 +185,7 @@ ul {
                 height: 0;
                 border-style: solid;
                 border-width: 0 7px 8px 7px;
-                border-color: transparent transparent #a7b8e2 transparent;
+                border-color: transparent transparent $menubg2 transparent;
 
 
             }
@@ -198,11 +205,11 @@ ul {
                     }
                     &:last-child{
                         a{
-                         border:none;   
-                     }
-                 }
-             }
-             li.hasChild {
+                           border:none;   
+                       }
+                   }
+               }
+               li.hasChild {
                 >ul {
                     z-index: 999;
                 }
