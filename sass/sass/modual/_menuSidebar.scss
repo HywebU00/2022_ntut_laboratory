@@ -112,7 +112,7 @@ $menuItems: 15;
                         border-bottom: 1px solid #ccc;
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
-                        font-weight: bold;
+                        font-weight: 500;
                         &:hover, &:focus{
                             background: #fff;
                             color: #000;
@@ -206,16 +206,16 @@ $menuItems: 15;
                             }
                             &:last-child{
                               a{
-                                 border:none; 
-                             }  
-                         }
-                     }
-                 }
-             }
-         }
-     }
- }
- .navigation {
+                               border:none; 
+                           }  
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+.navigation {
     position: relative;
     margin: 1em auto;
     text-align: left;
