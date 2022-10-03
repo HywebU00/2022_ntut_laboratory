@@ -108,6 +108,11 @@ p {
     position: absolute;
     top:0;
     right: 50px;
+    @include screen('mobile') {
+        position: static;
+        display: block;
+        text-align: center;
+    }
     em {
         font-style: normal;
         color: #fff;

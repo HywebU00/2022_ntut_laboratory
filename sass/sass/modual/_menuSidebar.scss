@@ -83,6 +83,7 @@ $menuItems: 15;
             }
             & > ul {
                 margin: 0;
+                padding: 0;
                 & > li {
                     transform: scale(1.15) translateX(-30px);
                     opacity: 0;
@@ -111,7 +112,7 @@ $menuItems: 15;
                         border-bottom: 1px solid #ccc;
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
-                        font-weight: 400;
+                        font-weight: bold;
                         &:hover, &:focus{
                             background: #fff;
                             color: #000;
@@ -168,7 +169,7 @@ $menuItems: 15;
                                 display: block;
                                 min-height: 1.5em;
                                 line-height: 1.5em;
-                                font-weight: normal;
+                                font-weight: bold;
                                 padding: 0.5em 1em 0.5em 2em !important;
                                 color: darken($primaryColor, 5);
                                 border-bottom: solid 1px #ccc;
@@ -205,16 +206,16 @@ $menuItems: 15;
                             }
                             &:last-child{
                               a{
-                               border:none; 
-                           }  
-                       }
-                   }
-               }
-           }
-       }
-   }
-}
-.navigation {
+                                 border:none; 
+                             }  
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ .navigation {
     position: relative;
     margin: 1em auto;
     text-align: left;
