@@ -114,7 +114,7 @@ body {
         flex-basis: 220px;
         max-width: 220px;
         margin-right: 40px;
-        min-height: 100vh;
+        // min-height: 100vh;
         background: #f5f5f5;
         &.hidden {
             +.center_block {
@@ -127,7 +127,7 @@ body {
             flex: auto;
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
-            min-height: 90vh;
+            // min-height: 90vh;
             padding: 136px 0 6em;
         }
         @include screen('tablet') {
