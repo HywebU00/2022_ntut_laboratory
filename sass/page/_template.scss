@@ -127,8 +127,8 @@ body {
             flex: auto;
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
-            // min-height: 90vh;
-            padding: 136px 0 6em;
+            min-height: 90vh;
+            padding: 136px 0 0;
         }
         @include screen('tablet') {
             display: block;
@@ -136,7 +136,7 @@ body {
                 flex: none;
                 flex-basis: calc(100% - 300px);
                 max-width: calc(100% - 300px);
-                padding: 136px 0 6em;
+                padding: 136px 0 0;
             }
         }
         @include screen('mobile') {
@@ -145,7 +145,7 @@ body {
                 flex: none;
                 flex-basis: 100%;
                 max-width: 100%;
-                padding: 130px 5% 6em;
+                padding: 130px 5% 0;
             }
         }
     }
