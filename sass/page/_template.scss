@@ -82,7 +82,7 @@ body {
             flex: auto;
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
-            min-height: 90vh;
+            min-height: 94vh;
             padding: 1.5em 0;
         }
         @include screen('tablet') {
@@ -127,7 +127,7 @@ body {
             flex: auto;
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
-            min-height: 90vh;
+            min-height: 94vh;
             padding: 136px 0 0;
         }
         @include screen('tablet') {
