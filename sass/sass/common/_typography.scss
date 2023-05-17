@@ -32,9 +32,15 @@
     }
     p {
         font-size: 1em;
-        line-height: 1.85em;
-        margin-top: 0;
+        line-height: 1.65em;
+        margin: 1em 0;
+        &:empty{
+            display: block;
+            min-height: 1em;
+            margin: 0;
+        }
     }
+    
     ul,
     ol {
         font-size: 1em;
