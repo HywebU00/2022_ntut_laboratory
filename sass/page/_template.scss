@@ -83,7 +83,8 @@ body {
             flex-basis: calc(100% - 300px);
             max-width: calc(100% - 300px);
             min-height: 94vh;
-            padding: 1.5em 0;
+            // padding: 1.5em 0;
+            padding: 0;
         }
         @include screen('tablet') {
             display: none;
