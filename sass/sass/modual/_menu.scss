@@ -80,7 +80,7 @@
             flex: 0 1 16%;
             >a {
                 display: block;
-                padding: .6em 1em .6em 2em;
+                padding: .6em 1.2em .6em 2em;
                 // min-height: 3em;
                 font-weight: 500;
                 line-height: 1.6em;
@@ -111,7 +111,7 @@
                         margin-bottom: 0.2em;
                         position: absolute;
                         top:1.18em;
-                        right:1em;
+                        right:.5em;
                         &:hover, &:focus{
                             border: 2px solid lighten($color-word, 90);
                         }
@@ -133,10 +133,10 @@
         }
         .active{
             a{
-               background: $primaryColor;
-               color: #fff; 
-           }
-           ul{
+             background: $primaryColor;
+             color: #fff; 
+         }
+         ul{
             a{
                 background: #a7b9e2;
                 color: #19367B;
@@ -201,11 +201,11 @@ ul {
                     }
                     &:last-child{
                         a{
-                           border:none;   
-                       }
-                   }
-               }
-               li.hasChild {
+                         border:none;   
+                     }
+                 }
+             }
+             li.hasChild {
                 >ul {
                     z-index: 999;
                 }
