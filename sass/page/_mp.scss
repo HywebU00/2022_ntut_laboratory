@@ -69,9 +69,15 @@ a.more {
 .mp{
     .counter{
         position: fixed;
+        bottom:1em;
+        left:2em;
         font-size: 0.813em;
-        bottom:1.3em;
-        left:2.5em;
+        margin: 0;
+        background: rgba(255, 255, 255, .6);
+        padding: 0 1em;
+        border-radius:5px;
+        // bottom:1.3em;
+        // left:2.5em;
         em {
             font-style: normal;
             padding: 0 .5em;
@@ -80,7 +86,7 @@ a.more {
 }
 
 .mplogo{
-    height: 65vh;
+    min-height: 60.5vh;
     h1{
         margin-top: 28.5vh;
         color:#020d45;
@@ -101,6 +107,7 @@ a.more {
         }
         @include screen('mobile') {
             margin-top: 10vh;
+            font-size: 1.8em;
             img{
                 width: 320px;
             }
@@ -123,7 +130,7 @@ a.more {
         font-size: 1.25em;
         line-height: 1.4em;
         color:#010e45;
-        letter-spacing:1px;
+        letter-spacing:0;
         padding-left: .8em;
         font-weight: 500;
         font-family: 'Noto Sans TC', sans-serif;
@@ -135,23 +142,40 @@ a.more {
             color:#333b69;
             font-weight: normal;
             line-height: 1.2em;
-            letter-spacing:1px;
+            letter-spacing:0;
             margin-top: .5em;
+        }
+        @include screen('mobile') {
+            font-size: 1.125em;
         }
 
     }
-    .copyright{
-        position: absolute;
-        left:260px;
-        bottom:1em;
-        line-height: 1.4em;
-        font-size: .813em;
-        p{margin: 0;}
-        @include screen('mobile') {
-            position: fixed;
-            left:20px;
-            bottom:5px;
-        }
+    // .copyright{
+    //     position: absolute;
+    //     left:260px;
+    //     bottom:1em;
+    //     line-height: 1.4em;
+    //     font-size: .813em;
+    //     p{margin: 0;}
+    //     @include screen('mobile') {
+    //         position: fixed;
+    //         left:20px;
+    //         bottom:5px;
+    //     }
+    // }
+}
+.copyright{
+    position: relative;
+    left:260px;
+    // bottom:1em;
+    line-height: 1.4em;
+    font-size: .813em;
+    padding: 1em 0;
+    p{margin: 0;}
+    @include screen('mobile') {
+        // position: fixed;
+        left:20px;
+        // bottom:5px;
     }
 }
 

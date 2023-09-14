@@ -27,15 +27,16 @@
 }
 .menu {
     box-sizing: border-box;
-    position: fixed;
+    // position: fixed;
+    position:relative;
     z-index: 9;
     clear: both;
-    top:110px;
+    // top:130px;
     width: 220px;
-    max-height: 72vh;
-    overflow-y: auto;
+    // max-height: 72vh;
+    // overflow-y: auto;
     @include screen('mobile') {
-        max-height: 86vh;
+        // max-height: 86vh;
     }
 
     &.sticky {
@@ -133,10 +134,10 @@
         }
         .active{
             a{
-               background: $primaryColor;
-               color: #fff; 
-           }
-           ul{
+             background: $primaryColor;
+             color: #fff; 
+         }
+         ul{
             a{
                 background: #a7b9e2;
                 color: #19367B;
@@ -151,6 +152,7 @@ ul {
             display: block;
             outline: none;
             text-decoration: none;
+            word-wrap:break-word;
         }
         ul {
             display: none;
@@ -201,11 +203,11 @@ ul {
                     }
                     &:last-child{
                         a{
-                           border:none;   
-                       }
-                   }
-               }
-               li.hasChild {
+                         border:none;   
+                     }
+                 }
+             }
+             li.hasChild {
                 >ul {
                     z-index: 999;
                 }

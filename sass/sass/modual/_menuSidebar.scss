@@ -39,7 +39,8 @@ $menuItems: 15;
     }
     .m_area {
         width: 300px;
-        padding: 3em 0;
+        // padding: 3em 0;
+        padding: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -70,7 +71,7 @@ $menuItems: 15;
         .menu,
         .megamenu {
             width: 99%;
-            margin: -3em auto 1em;
+            margin: 3em auto 1em;
             max-height: auto;
             a {
                 display: block;
@@ -206,16 +207,16 @@ $menuItems: 15;
                             }
                             &:last-child{
                               a{
-                               border:none; 
-                           }  
-                       }
-                   }
-               }
-           }
-       }
-   }
-}
-.navigation {
+                                 border:none; 
+                             }  
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ .navigation {
     position: relative;
     margin: 1em auto;
     text-align: left;

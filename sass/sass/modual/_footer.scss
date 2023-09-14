@@ -12,9 +12,9 @@ footer {
 
     color:#fff;
     padding: 10px;
+    // position: relative;
+    // z-index: 999;
     position: relative;
-    z-index: 999;
-    // position: fixed;
     // width: 100%;
     // bottom: 0;
     // left: 0;
@@ -22,8 +22,8 @@ footer {
 
     @include screen('mobile') {
         position: relative;
-        bottom: 0;
-        left: 0;
+        // bottom: 0;
+        // left: 0;
         p{
             line-height: 1.5em;
             font-size: 0.75em;
@@ -33,7 +33,7 @@ footer {
     }
     .container {
         @include gutter;
-        justify-content:center;
+        // justify-content:center;
 
         >div {
             // padding-bottom: 1em;
@@ -42,32 +42,35 @@ footer {
         @include screen('tablet') {
             flex-wrap:wrap;
         }
+        @include screen('mobile') {
+          justify-content:center;  
+      }
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover,
+    &:focus {
+        color: darken(#fff, 10);
     }
-    a {
-        text-decoration: none;
-        color: $primaryColor;
-        &:hover,
-        &:focus {
-            color: darken($primaryColor, 10);
-        }
+}
+.footer_logo {
+    flex:0 1 240px;
+    img{
+        width:96%;
+        margin: 2px 0 0 0;
     }
-    .footer_logo {
-        flex:0 1 240px;
-        img{
-            width:96%;
-            margin: 2px 0 0 0;
-        }
-    }
-    .footer_info {
-        flex:0 1 auto;
-    }
-    .footer_icon {
-        flex:0 1 200px;
-        @include screen('tablet') {
-           flex:1 1 100%; 
-           text-align: right;
-       }
+}
+.footer_info {
+    flex:0 1 auto;
+}
+.footer_icon {
+    flex:0 1 200px;
+    @include screen('tablet') {
+       flex:1 1 100%; 
+       text-align: right;
    }
+}
     // 版權連結
     .footer_link {
         @include li-reset();
@@ -107,7 +110,7 @@ p {
     margin-right: 5px;
     position: absolute;
     top:0;
-    right: 50px;
+    right: 0;
     @include screen('mobile') {
         position: static;
         display: block;
