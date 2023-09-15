@@ -33,7 +33,7 @@ footer {
     }
     .container {
         @include gutter;
-        // justify-content:center;
+        justify-content:center;
 
         >div {
             // padding-bottom: 1em;

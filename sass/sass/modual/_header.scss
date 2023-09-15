@@ -232,6 +232,10 @@
                         left:0;
                         top:.7em;
                     }
+                    &:hover, &:focus{
+                        text-decoration: underline;
+                        color:#c00;
+                    }
                 }
                 &:first-child a{
                  &:before{
