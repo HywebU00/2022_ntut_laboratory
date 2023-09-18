@@ -63,8 +63,7 @@
         .sidebarCtrl {
             display: none;
             left: 0px;
-            background: rgba(255, 255, 255, .8);
-            
+
 
             @extend %mobileCtrlBtn;
             span {
@@ -108,6 +107,7 @@
             }
         }
     }
+
     h1 {
         // float: left;
         width: 680px;
@@ -240,7 +240,7 @@
                     }
                 }
                 &:first-child a{
-                   &:before{
+                 &:before{
                     display: none;
                 }
 
@@ -257,6 +257,17 @@
             align-items: center;
             align-self: center;
         }
+    }
+}
+
+.mp{
+    .header{
+        >.container {
+            .sidebarCtrl {
+                background: rgba(255, 255, 255, .8);
+            }
+        }
+
     }
 }
 
@@ -449,13 +460,13 @@
           }
       }
       >.container {
-       .sidebarCtrl {
-        span{
-            background: #19367B;
-        }
-    } 
+         .sidebarCtrl {
+            span{
+                background: #19367B;
+            }
+        } 
 
-}
+    }
 
 
 }
