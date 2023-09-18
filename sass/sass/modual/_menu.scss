@@ -86,7 +86,7 @@
                 font-weight: 500;
                 line-height: 1.6em;
                 // white-space: nowrap;
-                color: $color-word;
+                color: #000;
                 border-top-right-radius: 12px;
                 border-bottom-right-radius: 12px;
                 &:hover, &:focus{
@@ -134,10 +134,10 @@
         }
         .active{
             a{
-             background: $primaryColor;
-             color: #fff; 
-         }
-         ul{
+               background: $primaryColor;
+               color: #fff; 
+           }
+           ul{
             a{
                 background: #a7b9e2;
                 color: #19367B;
@@ -203,11 +203,11 @@ ul {
                     }
                     &:last-child{
                         a{
-                         border:none;   
-                     }
-                 }
-             }
-             li.hasChild {
+                           border:none;   
+                       }
+                   }
+               }
+               li.hasChild {
                 >ul {
                     z-index: 999;
                 }
