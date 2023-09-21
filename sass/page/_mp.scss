@@ -68,14 +68,15 @@ a.more {
 
 .mp{
     .counter{
-        position: fixed;
-        bottom:1em;
-        left:2em;
+        position: relative;
+        // bottom:1em;
+        left:.8em;
         font-size: 0.813em;
-        margin: 0;
+        margin: 3em 0 0 0;
         background: rgba(255, 255, 255, .6);
-        padding: 0 1em;
+        padding: .3em 1em;
         border-radius:5px;
+        max-width: 90%;
         // bottom:1.3em;
         // left:2.5em;
         em {
@@ -168,17 +169,26 @@ a.more {
 }
 .copyright{
     position: relative;
-    left:260px;
+    // left:260px;
     // bottom:1em;
     line-height: 1.4em;
     font-size: .813em;
-    padding: 1em 0;
+    padding: 1em 0 1em 260px;
     // word-break: break-all!important;
     word-wrap:break-word;
 
     p{
         margin: 0;
+        padding: 3px 5px;
         
+    }
+    .counter{
+        position: absolute;
+        left:1em;
+        font-size: 1em;
+        padding: 3px 5px;
+        margin: 0;
+
     }
     @include screen('tablet') {
         left:20px;
