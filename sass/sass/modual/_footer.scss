@@ -43,7 +43,8 @@ footer {
             flex-wrap:wrap;
         }
         @include screen('mobile') {
-          justify-content:center;  
+          justify-content:center;
+          padding: 0;  
       }
   }
   a {
@@ -111,7 +112,7 @@ p {
     position: absolute;
     top:0;
     right: 0;
-    @include screen('mobile') {
+    @include screen('tablet') {
         position: static;
         display: block;
         text-align: center;
