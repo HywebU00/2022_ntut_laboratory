@@ -110,13 +110,13 @@
 
     h1 {
         // float: left;
-        width: 680px;
+        // width: 680px;
         min-height: 75px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         position: absolute;
-        top:40px;
+        top:48px;
         left:.75em;
         z-index: 9999;
 
@@ -151,7 +151,7 @@
             line-height: 1.35em;
             font-weight: 400;
             letter-spacing: 0;
-            font-size: .6em;
+            font-size: .7em;
         }
 
         @include screen('tablet') {
