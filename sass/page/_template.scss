@@ -8,11 +8,11 @@ html {
 
 body {
     background: url('../images/mp_bg.jpg')no-repeat left top;
-    background-attachment: fixed;
+    background-attachment: fixed!important;
     // background-size: cover;
     background-size: 100% auto!important;
     &.noscroll {
-        position: static !important;
+        // position: static !important;
         width: 100%;
         height: 100%;
         overflow: hidden !important;
