@@ -7,9 +7,10 @@ html {
 }
 
 body {
-    background: url('../images/mp_bg.jpg')no-repeat right top;
+    background: url('../images/mp_bg.jpg')no-repeat left top;
     background-attachment: fixed;
-    background-size: cover;
+    // background-size: cover;
+    background-size: 100% auto!important;
     &.noscroll {
         position: static !important;
         width: 100%;
@@ -20,8 +21,8 @@ body {
         padding: 0;
     }
     @include screen('mobile') {
-        background: url('../images/mp_bg_s.jpg')no-repeat right top;
-        background-size: auto 100%; 
+        background: url('../images/mp_bg_s.jpg')no-repeat left top;
+        background-size: 100% auto!important;
     }
 }
 
@@ -111,7 +112,7 @@ body {
                 // max-width: 85%;
                 flex:1 1 auto;
                 max-width: 100%;
-                min-height: 92vh;
+                min-height: 88vh;
             }
         }
     }
