@@ -176,6 +176,7 @@ a.more {
     padding: 1em 0 1em 260px;
     // word-break: break-all!important;
     word-wrap:break-word;
+    max-width: 95%;
 
     p{
         margin: 0;
@@ -202,6 +203,7 @@ a.more {
     }
     @include screen('mobile') {
         padding: 1em 0;
+        max-width: 95%;
         // max-width: 76%; 
 
     }
