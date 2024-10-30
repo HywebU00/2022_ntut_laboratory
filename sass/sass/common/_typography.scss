@@ -35,7 +35,9 @@
         font-size: 1em;
         line-height: 1.65em;
         margin: 1em 0;
-        word-break: break-all;
+        // word-break: break-all;
+        word-break: break-word;
+        text-align:justify;
         &:empty{
             display: block;
             min-height: 1em;
